@@ -19,8 +19,20 @@ public:
 	//namespace省略
 	template<class T>using ComPtr = Microsoft::WRL::ComPtr<T>;
 
+	bool PushKey(BYTE keyNumber);
+
+	bool TriggerKey(BYTE keyNumber);
+
+	//全キーの状態
+	BYTE key[256] = {};
+
+	//DirectInputのインスタンス
+	ComPtr<IDirectInput8>directInput;
+
 private:
 	Microsoft::WRL::ComPtr<IDirectInputDevice8> keyboard;
+	//前回の全キー状態
+	BYTE keyPre[256] = {};
 };
 
 
