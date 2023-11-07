@@ -1,23 +1,6 @@
-﻿#include <d3d12.h>
-#include <cassert>
-#include <vector>
-#include <string>
-#include <DirectXMath.h>
-#include <DirectXTex.h>
-#include <d3dcompiler.h>
-#include <wrl.h>
-
-#include "Input.h"
+﻿#include "Input.h"
 #include "WinApp.h"
 #include "DirectXCommon.h"
-
-
-#pragma comment(lib, "d3d12.lib")
-#pragma comment(lib, "d3dcompiler.lib")
-
-using namespace DirectX;
-using namespace Microsoft::WRL;
-
 
 // Windowsアプリでのエントリーポイント(main関数)
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
