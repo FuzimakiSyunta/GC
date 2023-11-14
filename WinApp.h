@@ -7,7 +7,7 @@ public:
 
 	static LRESULT WindowProc(HWND hwnd, UINT msg, WPARAM wparam, LPARAM lparam);
 
-	void initialize();
+	void Initialize();
 	bool Update();
 	void Finalize();
 
