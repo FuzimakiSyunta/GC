@@ -65,7 +65,7 @@ void SpriteCommon::Initialize(DirectXCommon* dxCommon)
 	//読み込み処理
 	ComPtr<IDxcBlob>vertexShaderBlob = CompileShader(L"Resources/shaders/SpriteVS.hlsl", L"vs_6_0", dxcUtils.Get(), dxcCompiler.Get(), includeHandler.Get());
 	assert(SUCCEEDED(result));
-	ComPtr<IDxcBlob>pixcelShaderBlob = CompileShader(L"Resources/shaders/SpritePS.hlsl", L"vs_6_0", dxcUtils.Get(), dxcCompiler.Get(), includeHandler.Get());
+	ComPtr<IDxcBlob>pixcelShaderBlob = CompileShader(L"Resources/shaders/SpritePS.hlsl", L"ps_6_0", dxcUtils.Get(), dxcCompiler.Get(), includeHandler.Get());
 	assert(SUCCEEDED(result));
 
 	//パイプラインステート

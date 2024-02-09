@@ -8,7 +8,7 @@ struct VertexShaderInput
     float4 position : POSITION0;
 };
 
-VertexShaderOutput main(VertexShader Input input)
+VertexShaderOutput main(VertexShaderInput input)
 {
     VertexShaderOutput output;
     output.position = input.position;
